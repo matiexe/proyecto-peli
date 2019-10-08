@@ -1,24 +1,61 @@
 .container {
-    background-color: black;
-    color: white;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-column-gap: 10px;
+    background-color: white;
+    color:black;
     font-family: Arial, Helvetica, sans-serif;
     width: 1000px;
-    margin: auto;
+    margin: -1% auto auto auto ;
 
 }
 .header {
     width: 100%;
+    grid-column: 1/4;
     height: 486px;
-    background-color: aqua;
+    background-image: url('../img/jw3.jpg');
+    background-position: center;
+    background-size: cover;
 }
+.header  h1{ 
+    margin-top:400px;
+    margin-left: 30px;
+    color: white;
+}
+
 .menu{
-    margin:0px;
+    overflow: hidden;
+    grid-column: 1/4;
+    background-color:black;
+}
+.menu li{
+    align-items: center;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 20px 20px 0px;
+    text-decoration: none;
+}
+.sinopsis{
+    grid-column: 1/4;
+    grid-template-columns: repeat(4,1fr);
+    background-color: aqua;
+    padding: 0 10% 0 10%;
+
+}
+.sinopsis h3{
+    grid-column: 2/5;
+}
+footer{
     width: 100%;
-    height: 50px;
-    background-color: darkgoldenrod;
+    grid-column: 1/4;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 body{
-    background-color: purple;
+    
 }
 h4{
     color: yellowgreen;
